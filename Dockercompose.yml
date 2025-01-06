@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  user-service:
+    build: ./user-service
+    ports:
+      - "5001:5000"
+    environment:
+      JWT_SECRET_KEY: your_jwt_secret_key
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

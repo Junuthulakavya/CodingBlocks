@@ -1,0 +1,4 @@
+flask
+flask-jwt-extended
+bcrypt
+psycopg2-binary
